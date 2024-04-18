@@ -10,12 +10,21 @@ const AlertDialog = AlertDialogPrimitive.Root
 
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger
 
-const AlertDialogPortal = ({
-  className,
-  ...props
-}: AlertDialogPrimitive.AlertDialogPortalProps) => (
-  <AlertDialogPrimitive.Portal className={cn(className)} {...props} />
-)
+
+interface AlertDialogPortalProps extends React.HTMLAttributes<HTMLDivElement> {
+  className?: string;
+}
+
+const AlertDialogPortal = (
+  props: AlertDialogPortalProps) => {
+
+    const {className, ...restProps} = props
+      return (  
+        // @ts-ignore
+        <AlertDialogPrimitive.Portal className={cn(className)} {...restProps} />
+      ) 
+  }
+
 AlertDialogPortal.displayName = AlertDialogPrimitive.Portal.displayName
 
 const AlertDialogOverlay = React.forwardRef<

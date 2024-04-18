@@ -86,7 +86,7 @@ const Page = ({ params }: { params: { id: string } }) => {
       </div>
       {(!tab || tab === "likes") &&
         post?.likedBy?.map((user: User) => {
-          return <FeaturedAccount user={user} />;
+          return <FeaturedAccount key={user.id} user={user} />;
         })}
       {tab === "comments" && (
         <div ref={parent}>

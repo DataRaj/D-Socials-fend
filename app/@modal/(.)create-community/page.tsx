@@ -40,7 +40,7 @@ const CreateNewCommunity = () => {
             success: <p>Created</p>,
             error: (
               <p>
-                Community with name <b>"{community.name}"</b> already exists
+                Community with name <b>{community.name}</b> already exists
               </p>
             ),
           }

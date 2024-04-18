@@ -80,7 +80,7 @@ export default function Page({ params }: { params: { slug: string[] } }) {
       {params.slug[1] === "members" && (
         <div>
           {Community?.members?.map((user: any) => {
-            return <FeaturedAccount user={user} />;
+            return <FeaturedAccount key={user.id} user={user} />;
           })}
         </div>
       )}
@@ -88,7 +88,7 @@ export default function Page({ params }: { params: { slug: string[] } }) {
       {params.slug[1] === "admins" && (
         <div>
           {Community?.admin?.map((user: any) => {
-            return <FeaturedAccount user={user} />;
+            return <FeaturedAccount key={user.key} user={user} />;
           })}
         </div>
       )}
