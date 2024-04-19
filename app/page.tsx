@@ -26,7 +26,7 @@ export default function Home() {
         alt="logo"
         className=" animate-pulse"
       />
-      <h1 className=" text-3xl font-bold">Blabstr</h1>
+      <h1 className=" text-3xl font-bold">D-Socials</h1>
     </main>
   );
 }
