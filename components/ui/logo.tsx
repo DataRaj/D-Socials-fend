@@ -11,7 +11,7 @@ const Logo = ({ text }: { text: true | false }) => {
         alt="logo"
         className=" lg:-my-4 lg:-ml-2"
       />
-      <p className={`${text ? "" : " hidden lg:inline"}  font-bold`}>Blabstr</p>
+      <p className={`${text ? "" : " hidden lg:inline"}  font-bold`}>D-Socials</p>
     </div>
   );
 };
