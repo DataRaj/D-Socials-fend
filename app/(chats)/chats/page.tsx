@@ -48,7 +48,7 @@ const Page = () => {
         </p>
         <p className="  text-darkGray dark:text-lightGray">
           Drop a line, share posts and more with private conversation between
-          you and others on Blabstr
+          you and others on D-Socials
         </p>
 
         <Button
